@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(pexels-stockified-43454-160087.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 7%;
+    gap: 20px;
+}
+
+.logo {
+    width: 140px;
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li {
+    list-style: none;
+    display: inline-block;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #ff5361;
+}
+
+.register-btn {
+    background: #fff;
+    color: #000;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: right;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-left: auto;
+}
+
+.register-btn:hover {
+    background: #ff5361;
+    color: #fff;
+}
+
+.container {
+    padding: 0 7%;
+    text-align: center;
+}
+
+.header h1.title-center {
+    font-size: 4vw;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+}
+
+.search-bar {
+    background: #fff;
+    width: 70%;
+    margin: 30px auto;
+    padding: 6px 10px 6px 30px;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar form {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.search-bar form input {
+    display: block;
+    border: 0;
+    outline: none;
+    background: transparent;
+    flex: 1;
+    padding: 10px 0;
+    font-size: 16px;
+}
+
+.search-bar form button {
+    background: #ff5361;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar form button:hover {
+    background: #e04a54;
+}
+
+.search-bar form button img { width: 15px; margin-top: 7px; } .location-input { flex: 1; } .search form label { font-weight: 600; } .sub-title { margin: 50px 0 20px; font-size: 2.2vw; font-weight: 500; color: #333; }
+
+.exclusives {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+}
+
+.exclusives div {
+    position: relative;
+    text-align: center;
+}
+
+.exclusives div img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; 
+}
+
+.exclusives div span {
+    display: block;
+    margin-top: 10px;
+    color: #333;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+/* Trending places */
+.trending {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.trending div {
+    flex: 1 1 calc(25% - 30px); /* Adjust the width of each image */
+    max-width: calc(25% - 30px); /* Adjust the width of each image */
+    text-align: center;
+}
+
+.trending div img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Makes the corners of the images curved */
+}
+
+
+/* Travellers Stories */
+.stories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.stories div {
+    flex: 1 1 calc(33.33% - 30px);
+    max-width: calc(33.33% - 30px);
+    text-align: center;
+}
+
+.stories div img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.start-btn {
+    text-decoration: none;
+    background: #ff5361;
+    color: #fff;
+    width: 80%;
+    max-width: 350px;
+    display: block;
+    text-align: center;
+    margin: 60px auto;
+    padding: 15px;
+    border-radius: 30px;
+    font-size: 20px;
+}
+
+.about-msg {
+    text-align: center;
+    margin: 80px 0;
+    color: #333;
+    font-size: 17px;
+}
+
+.about-msg h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+footer {
+    margin: 80px 0 10px;
+    text-align: center;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #999;
+    font-size: 22px;
+    margin: 0 10px;
+}
+
+.footer hr {
+    background: #999;
+    height: 1px;
+    width: 100%;
+    border: 0;
+    margin: 20px 0;
+}
+footer p {
+    padding-bottom: 15px;
+}
+
+.active {
+    position: relative;
+}
+
+.active::after {
+    content: '';
+    background: #fff;
+    width: 25px;
+    height: 2px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -12px;
+    border-radius: 2px;
+}
+
+nav .fa-bars {
+    display: none;
+}
